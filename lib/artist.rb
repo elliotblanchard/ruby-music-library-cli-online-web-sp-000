@@ -33,7 +33,7 @@ class Artist
     end
 
     def songs
-      binding.pry
+      #binding.pry
       @songs
     end
 end
