@@ -26,7 +26,7 @@ class MusicLibraryController
 
     def list_songs
       songs = Song.all
-      songs.each |song| do
+      songs.each |song|
         puts(song)
       end
     end
