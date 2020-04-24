@@ -29,6 +29,5 @@ class MusicLibraryController
       songs.each |song| do
         puts(song)
       end
-      end
     end
 end
