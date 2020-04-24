@@ -1,7 +1,7 @@
 require 'pry'
 
 class Artist
-  extend Findable::ClassMethods
+  extend Concerns::Findable
 
   attr_accessor :name
 
