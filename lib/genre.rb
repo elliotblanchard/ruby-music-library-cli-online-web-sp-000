@@ -49,6 +49,6 @@ class Genre
       songs.each do |song|
         unique_artists << song.artist
       end
-      unique_genres.uniq
+      unique_artists.uniq
     end
 end
