@@ -1,6 +1,8 @@
 require 'pry'
 
 class Artist
+  extend Findable::ClassMethods
+
   attr_accessor :name
 
     @@all = []
