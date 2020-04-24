@@ -5,6 +5,13 @@ class Song
 
     @@all = []
 
+    def initialize(name,artist=nil,genre=nil)
+      @name = name
+      self.artist = artist if artist
+      @genre = genre
+      @@all << self
+    end
+    
     def artist=(artist)
       @artist = artist
       artist.add_song(self)
@@ -16,13 +23,6 @@ class Song
 
     def genre
       @genre
-    end
-
-    def initialize(name,artist=nil,genre=nil)
-      @name = name
-      self.artist = artist if artist
-      @genre = genre
-      @@all << self
     end
 
     def self.all
