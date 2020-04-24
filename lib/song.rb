@@ -14,11 +14,10 @@ class Song
       @artist
     end
 
-    #def initialize(name,artist=nil)
     def initialize(name,artist=nil)
       @name = name
-      #artist = (artist)
-      @artist = artist
+      artist = (artist)
+      #@artist = artist
       @@all << self
     end
 
