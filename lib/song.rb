@@ -57,6 +57,15 @@ class Song
       @artist_name
     end
 
+    def genre_name=(genre_name)
+      @artist_name = Artist.find_or_create_by_name(artist_name)
+      @artist = @artist_name
+    end
+
+    def artist_name
+      @artist_name
+    end
+
     def self.new_from_filename(filename)
       parsed_filename = filename.split(" - ")
       new_song = self.new(parsed_filename[1])
