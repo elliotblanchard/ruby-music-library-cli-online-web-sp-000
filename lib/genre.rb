@@ -31,10 +31,10 @@ class Genre
       @songs
     end
 
-    #def add_song(song)
-    #  if song.genre == nil
-    #    @songs << song
-    #    song.genre = self
-    #  end
-    #end
+    def add_song(song)
+      if song.genre == nil
+        @songs << song
+        song.genre = self
+      end
+    end
 end
