@@ -18,6 +18,7 @@ class Song
       @name = name
       #artist = (artist)
       @artist = artist
+      @genre = genre
       @@all << self
     end
 
