@@ -23,4 +23,12 @@ class MusicLibraryController
         input = gets.strip
       end
     end
+
+    def list_songs
+      songs = Song.all
+      songs.each |song| do
+        puts(song)
+      end
+      end
+    end
 end
