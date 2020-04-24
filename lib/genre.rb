@@ -32,8 +32,9 @@ class Genre
     end
 
     def add_song(song)
-      if @songs.include? song == false
+      binding.pry
+      #if @songs.include? song == false
         @songs << song
-      end  
+      #end
     end
 end
