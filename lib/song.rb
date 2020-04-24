@@ -80,4 +80,8 @@ class Song
     def self.create_from_filename(filename)
       @@all << self.new_from_filename(filename)
     end
+
+    def self.alphabetical
+      self.all.sort_by {|song| song.name}
+    end
 end
