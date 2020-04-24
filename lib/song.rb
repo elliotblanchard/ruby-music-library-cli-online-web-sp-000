@@ -62,8 +62,8 @@ class Song
       @genre = @genre_name
     end
 
-    def artist_name
-      @artist_name
+    def genre_name
+      @genre_name
     end
 
     def self.new_from_filename(filename)
