@@ -22,10 +22,10 @@ class Song
       @artist
     end
 
-    def genre=(genre)
-      self.genre = genre
+    #def genre=(genre)
+      #self.genre = genre
       #genre.add_song(self)
-    end
+    #end
 
     def genre
       @genre
