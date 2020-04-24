@@ -43,10 +43,12 @@ class Artist
         song.artist == self
       end
     end
-    
+
     def genres
-      songs.map do |song|
-        song.genre
+      unique_genres = []
+      songs.each do |song|
+        unique_genres << song.genre
       end
+      unique_genres.uniq
     end
 end
