@@ -22,7 +22,7 @@ class Song
     end
 
     def genre=(genre)
-      artist.genre
+      self.genre = genre
     end
 
     def genre
