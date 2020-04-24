@@ -14,6 +14,10 @@ class Song
       @artist
     end
 
+    def genre
+      @genre
+    end
+
     def initialize(name,artist=nil,genre=nil)
       @name = name
       #artist = (artist)
