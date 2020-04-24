@@ -5,7 +5,7 @@ class Song
 
     @@all = []
 
-    def artist=(artist)
+    def artist=(artist=nil)
       @artist = artist
       artist.add_song(self)
     end
@@ -14,7 +14,8 @@ class Song
       @artist
     end
 
-    def initialize(name,artist=nil)
+    #def initialize(name,artist=nil)
+    def initialize(name)
       @name = name
       #self.artist=(artist)
       #@artist = artist
