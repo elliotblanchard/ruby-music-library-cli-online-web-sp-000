@@ -1,7 +1,7 @@
 require 'pry'
 
 class Song
-  extend Concerns::Findable
+  extend Findable::ClassMethods
 
   attr_accessor :name
 
