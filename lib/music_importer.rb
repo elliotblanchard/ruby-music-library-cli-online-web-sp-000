@@ -14,7 +14,7 @@ class MusicImporter
     result_array
   end
 
-  def import
+  def self.import
     songs_to_add = files
     songs_to_add.each {|song| Song.new_by_filename(song)}
   end
