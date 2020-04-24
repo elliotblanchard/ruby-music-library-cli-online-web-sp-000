@@ -58,8 +58,8 @@ class Song
     end
 
     def genre_name=(genre_name)
-      @artist_name = Artist.find_or_create_by_name(artist_name)
-      @artist = @artist_name
+      @genre_name = Genre.find_or_create_by_name(genre_name)
+      @genre = @genre_name
     end
 
     def artist_name
