@@ -72,6 +72,7 @@ class Song
       new_song.artist_name = parsed_filename[0]
       new_song.genre_name = parsed_filename[2]
       new_song.artist.add_song(new_song)
+      new_song.genre.add_song(new_song)
       new_song
     end
 
