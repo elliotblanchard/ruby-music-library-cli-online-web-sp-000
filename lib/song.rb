@@ -13,11 +13,11 @@ class Song
     def artist
       @artist
     end
-    
+
     def initialize(name,artist=nil)
       @name = name
       #self.artist=(artist)
-      @artist = artist
+      #@artist = artist
       @@all << self
     end
 
